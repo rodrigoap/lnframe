@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "LNFrame",
+  "version": "1.0",
+
+  "description": "LN Login IFrame remover.",
+  "icons": {
+    "48": "icons/ln-48.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "lnframe@mozilla.org",
+      "strict_min_version": "45.0"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.lanacion.com.ar/*"],
+      "js": ["lnframemain.js"]
+    }
+  ]
+
+}
